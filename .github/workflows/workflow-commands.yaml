@@ -9,3 +9,9 @@ jobs:
               run: echo "::error::Missing semicolon"
             - name: Setting error messgae with parameters
               run: echo "::error title:Error Title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing SemiColon"
+            - name: Setting debug messgae with parameters
+              run: echo "::debug title:Debug Title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing SemiColon"
+            - name: Setting warning messgae with parameters
+              run: echo "::warning title:Warning Title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing SemiColon"
+            - name: Setting notice messgae with parameters
+              run: echo "::notice title:Notice Title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing SemiColon"
