@@ -1,6 +1,11 @@
 name: First Workflow
 on: [push]
 jobs:
+    check-ram:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check RAM
+              run: free -m
     run-shell-commands:
         runs-on: ubuntu-latest
         steps:
